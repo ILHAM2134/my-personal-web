@@ -48,12 +48,4 @@ const nextConfig = {
   },
 };
 
-module.exports = async (phase) => {
-  /**
-   * @type {import('next').NextConfig}
-   */
-
-  const plugins = []; //All your plugins go into this array
-
-  return plugins.reduce((acc, next) => next(acc), nextConfig);
-};
+module.exports = nextConfig;
