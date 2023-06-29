@@ -106,11 +106,7 @@ export default function Navbar(props: Props) {
             sx={{ display: { xs: "none", sm: "block", fontSize: "1.5rem" } }}
           >
             {navItems.map((item) => (
-              <Button
-                key={item}
-                sx={{ fontSize: "1.5rem", ml: { md: 3 } }}
-                href={item.id}
-              >
+              <Button sx={{ fontSize: "1.5rem", ml: { md: 3 } }} href={item.id}>
                 {item.name}
               </Button>
             ))}
@@ -155,7 +151,7 @@ export default function Navbar(props: Props) {
             <Divider />
             <List>
               {navItems.map((item) => (
-                <ListItem key={item} disablePadding>
+                <ListItem disablePadding>
                   <ListItemButton sx={{ textAlign: "center" }} href={item.id}>
                     <ListItemText primary={item.name} />
                   </ListItemButton>
