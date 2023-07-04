@@ -8,7 +8,8 @@ import sm from "@public/img/about2.jpg";
 const About = () => {
   return (
     <Box
-      id='about'
+      className="child-snap"
+      id="about"
       sx={{
         mt: "100vh",
         height: "100vh",
@@ -69,7 +70,7 @@ const About = () => {
             />
           </Box>
         </Grid>
-        <Grid item xs={12} md={6} sx={{mt: {xs: 3, md: 0}}}>
+        <Grid item xs={12} md={6} sx={{ mt: { xs: 3, md: 0 } }}>
           <motion.div
             whileHover={{ scale: 1.05 }}
             initial={{ opacity: 0, scale: 0.5, x: 100 }}

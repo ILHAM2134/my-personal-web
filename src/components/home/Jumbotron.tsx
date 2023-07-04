@@ -12,7 +12,7 @@ const Jumbotron = () => {
 
   return (
     <Box
-      // className="child-snap"
+      className="child-snap"
       sx={{
         width: "100%",
         height: "100vh",
@@ -65,6 +65,12 @@ const Jumbotron = () => {
                 fontWeight: 900,
                 letterSpacing: "1px",
                 textAlign: { xs: "center", lg: "left" },
+                fontSize: {
+                  xs: "2.5rem",
+                  sm: "2.9rem",
+                  md: "3.5rem",
+                  lg: "4.5rem",
+                },
               }}
               style={{
                 display: "block",
@@ -86,6 +92,12 @@ const Jumbotron = () => {
                 fontWeight: 200,
                 letterSpacing: "1px",
                 textAlign: { xs: "center", lg: "left" },
+                fontSize: {
+                  xs: "1.3rem",
+                  sm: "1.7rem",
+                  md: "2rem",
+                  lg: "2.5rem",
+                },
               }}
               style={{
                 display: "block",
@@ -109,7 +121,7 @@ const Jumbotron = () => {
                 mx: { xs: "auto", lg: 0 },
                 fontSize: "1.2rem",
                 display: "block",
-                width: 'fit-content'
+                width: "fit-content",
               }}
               href="#about"
             >

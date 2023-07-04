@@ -106,7 +106,10 @@ export default function Navbar(props: Props) {
             sx={{ display: { xs: "none", sm: "block", fontSize: "1.5rem" } }}
           >
             {navItems.map((item) => (
-              <Button sx={{ fontSize: "1.5rem", ml: { md: 3 } }} href={item.id}>
+              <Button
+                sx={{ fontSize: "1.25rem", ml: { md: 3 } }}
+                href={item.id}
+              >
                 {item.name}
               </Button>
             ))}
