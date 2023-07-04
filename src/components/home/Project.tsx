@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import ModalImg from "@/components/ModalImg";
 import p1 from "@public/img/project1.jpg";
 import p2 from "@public/img/project2.jpg";
+import p3 from "@public/img/project3.jpg";
 
 const Project = () => {
   return (
@@ -223,6 +224,96 @@ const Project = () => {
         </Grid>
         <Grid item xs={12} md={8}>
           <ModalImg src={p2} />
+        </Grid>
+      </Grid>
+      <Grid
+        container
+        spacing={1}
+        justifyContent="space-between"
+        alignItems="center"
+        className="child-snap"
+        sx={{ mt: { xs: 1, md: 8 }, height: "100vh" }}
+      >
+        <Grid item xs={12} md={8}>
+          <ModalImg src={p3} />
+        </Grid>
+        <Grid item xs={12} md={4} sx={{ textAlign: "right" }}>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            initial={{ opacity: 0, scale: 0.5, x: -50 }}
+            whileInView={{ opacity: 1, scale: 1, x: 0 }}
+            transition={{ duration: 1 }}
+          >
+            <Typography
+              variant="h4"
+              sx={{ fontSize: { xs: "2rem", sm: "2.5rem" }, fontWeight: 600 }}
+            >
+              IndRadiance
+            </Typography>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5, x: 50 }}
+            whileInView={{ opacity: 1, scale: 1, x: 0 }}
+            transition={{ duration: 1 }}
+          >
+            <Typography
+              variant="h6"
+              sx={{
+                fontWeight: 400,
+                opacity: 0.9,
+                mt: 2,
+              }}
+            >
+              this is group project on college subject 'sistem basis data', we
+              create web app that can CRUD database, my major role as Frontend
+              developer, but i manage to help my team in Backend and deployment
+            </Typography>
+            <Typography
+              variant="h6"
+              sx={{
+                fontWeight: 500,
+                opacity: 0.9,
+                mt: 2,
+              }}
+            >
+              - Reactjs
+            </Typography>
+            <Typography
+              variant="h6"
+              sx={{
+                fontWeight: 500,
+                opacity: 0.9,
+                mt: 2,
+              }}
+            >
+              - Expressjs
+            </Typography>
+            <Typography
+              variant="h6"
+              sx={{
+                fontWeight: 500,
+                opacity: 0.9,
+                mt: 2,
+              }}
+            >
+              - MongoDB
+            </Typography>
+            <motion.div
+              whileHover={{ opacity: 0.7, x: 1.1 }}
+              initial={{ opacity: 0, scale: 0.5, x: 50 }}
+              whileInView={{ opacity: 1, scale: 1, x: 0 }}
+              transition={{ duration: 1 }}
+            >
+              <Button
+                variant="outlined"
+                href="https://belajar-db.vercel.app/"
+                target="_blank"
+                sx={{ mt: 2 }}
+              >
+                Visit site
+              </Button>
+            </motion.div>
+          </motion.div>
         </Grid>
       </Grid>
     </Box>
