@@ -32,8 +32,8 @@ interface Props {
 const navItems = [
   { name: "About", id: "#about" },
   { name: "Projects", id: "#projects" },
-  { name: "Training", id: "#training" },
-  { name: "Experience", id: "#experience" },
+  // { name: "Training", id: "#training" },
+  // { name: "Experience", id: "#experience" },
 ];
 
 export default function Navbar(props: Props) {
